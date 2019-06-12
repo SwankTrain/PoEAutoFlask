@@ -173,7 +173,7 @@ Loop {
 	FlaskDuration[3] := FlaskDurationInit[3] + VariableDelay ; randomize duration to simulate human
 	return
 
-~4::
+~8::
 	; pass-thru and start timer for flask 4
 	FlaskLastUsed[4] := A_TickCount
 	Random, VariableDelay, -99, 99
@@ -205,7 +205,7 @@ Loop {
 ; Use all flasks, now.  A variable delay is included between flasks
 ; NOTE: this will use all flasks, even those with a FlaskDurationInit of 0
 ;----------------------------------------------------------------------
-8::
+4::
 	if UseFlasks {
 		Send 1
 		Random, VariableDelay, -99, 99
