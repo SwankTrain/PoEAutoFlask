@@ -187,14 +187,14 @@ Loop {
 	FlaskDuration[5] := FlaskDurationInit[5] + VariableDelay ; randomize duration to simulate human
 	return
 
-~5::
+~9::
 	; pass-thru and start timer for flask 5
 	FlaskLastUsed["r"] := A_TickCount
 	Random, VariableDelay, -99, 99
 	FlaskDuration[5] := FlaskDurationInit[5] + VariableDelay ; randomize duration to simulate human
 	return
 
-~5::
+~-::
 	; pass-thru and start timer for flask 5
 	FlaskLastUsed["e"] := A_TickCount
 	Random, VariableDelay, -99, 99
@@ -222,10 +222,10 @@ Loop {
 		Send 5
 		Random, VariableDelay, -99, 99
 		Sleep, %VariableDelay%
-		Send 5
+		Send 9
 		Random, VariableDelay, -99, 99
 		Sleep, %VariableDelay%
-		Send 5
+		Send -
 	}
 	return
 
