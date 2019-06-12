@@ -205,7 +205,7 @@ Loop {
 ; Use all flasks, now.  A variable delay is included between flasks
 ; NOTE: this will use all flasks, even those with a FlaskDurationInit of 0
 ;----------------------------------------------------------------------
-`::
+8::
 	if UseFlasks {
 		Send 1
 		Random, VariableDelay, -99, 99
