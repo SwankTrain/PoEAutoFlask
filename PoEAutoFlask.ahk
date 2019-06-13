@@ -136,14 +136,14 @@ Loop {
 ; Make the change in both places, below (the first is click,
 ; 2nd is release of button}
 ;----------------------------------------------------------------------
-~RButton::
+~MButton::
 	; pass-thru and capture when the last attack (Right click) was done
 	; we also track if the mouse button is being held down for continuous attack(s) and/or channelling skills
 	HoldRightClick := true
 	LastRightClick := A_TickCount
 	return
 
-~RButton up::
+~MButton up::
 	; pass-thru and release the right mouse button
 	HoldRightClick := false
 	return
