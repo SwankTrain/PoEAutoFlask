@@ -207,9 +207,6 @@ Loop {
 ;----------------------------------------------------------------------
 4::
 	if UseFlasks {
-		Send 1
-		Random, VariableDelay, -99, 99
-		Sleep, %VariableDelay%
 		Send 2
 		Random, VariableDelay, -99, 99
 		Sleep, %VariableDelay%
@@ -220,9 +217,6 @@ Loop {
 		Random, VariableDelay, -99, 99
 		Sleep, %VariableDelay%
 		Send 5
-		Random, VariableDelay, -99, 99
-		Sleep, %VariableDelay%
-		Send 9
 		Random, VariableDelay, -99, 99
 		Sleep, %VariableDelay%
 		Send -
