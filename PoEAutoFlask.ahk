@@ -222,10 +222,6 @@ Loop {
 		Send 5
 		Random, VariableDelay, -99, 99
 		Sleep, %VariableDelay%
-		Send e
-		Random, VariableDelay, -99, 99
-		Sleep, %VariableDelay%
-		Send r
 	}
 	return
 
